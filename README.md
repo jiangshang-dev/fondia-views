@@ -1,105 +1,172 @@
-JeecgBoot 企业级低代码开发平台
-===============
-当前最新版本： 3.9.5（2026-08-27）
+<p align="center">
+  <a href="https://github.com/jiangshang-dev/fondia-views">
+    <img src="https://img.shields.io/badge/Fondia-食养智能菜谱-ff6b35?style=for-the-badge" alt="Fondia Views">
+  </a>
+</p>
 
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/jeecg-boot/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Author-北京国炬软件-orange.svg)](http://jeecg.com/aboutusIndex)
-[![](https://img.shields.io/badge/version-3.9.5-brightgreen.svg)](https://github.com/jeecgboot/JeecgBoot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeecg-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
+<p align="center">
+  <a href="https://github.com/jiangshang-dev/fondia-views/stargazers">
+    <img src="https://img.shields.io/github/stars/jiangshang-dev/fondia-views?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/jiangshang-dev/fondia">
+    <img src="https://img.shields.io/badge/backend-fondia-1890ff.svg" alt="Backend">
+  </a>
+  <a href="https://github.com/jiangshang-dev/fondia_app">
+    <img src="https://img.shields.io/badge/app-fondia__app-ff6b35.svg" alt="Fondia App">
+  </a>
+  <img src="https://img.shields.io/badge/Vue-3-42b883.svg" alt="Vue 3">
+  <img src="https://img.shields.io/badge/JeecgBoot%20Vue3-3.9.5-1890ff.svg" alt="JeecgBoot Vue3">
+</p>
 
+<h1 align="center">Fondia 饭典 · 管理后台</h1>
 
+<p align="center">
+  食养智能菜谱的管理端 · Vue3 / Vite / Ant Design Vue<br>
+  后端 <a href="https://github.com/jiangshang-dev/fondia">jiangshang-dev/fondia</a>
+  · App <a href="https://github.com/jiangshang-dev/fondia_app">jiangshang-dev/fondia_app</a>
+</p>
 
-## 简介
-JeecgBoot-Vue3采用 Vue3.0、Vite、 Ant-Design-Vue4、TypeScript 等新技术方案，包括二次封装组件、utils、hooks、动态菜单、权限校验、按钮级别权限控制等功能。
- 
-> 强大的代码生成器让前后端代码一键生成! JeecgBoot引领低代码开发模式(OnlineCoding-> 代码生成-> 手工MERGE)， 帮助解决Java项目70%的重复工作，让开发更多关注业务。既能快速提高效率，节省成本，同时又不失灵活性
+---
 
+## 先 Star，再 Clone
 
-## 开发环境搭建
+这个仓库对 **已经 Star 的人** 开放学习和二次开发。
 
-- [前端开发环境准备](https://help.jeecg.com/setup/dev)
-- [前端项目快速启动](https://help.jeecg.com/setup/startup)
-- [通过IDEA启动项目](https://help.jeecg.com/java/setup/idea/startup)
+还没点 Star，请不要 Clone，也不要 Fork 之后只拉代码不回访。
 
-## 技术文档
-
--   官方文档：[https://help.jeecg.com](https://help.jeecg.com)
--   快速入门：[快速入门](http://jeecg.com/doc/quickstart) | [常见问题](http://help.jeecg.com/qa) 
--   QQ交流群：716913034、964611995(满)、⑩716488839(满)、⑨808791225(满)、其他满
--   在线演示 ：  [系统演示](http://boot3.jeecg.com)   | [APP演示](http://jeecg.com/appIndex)
-> 演示系统的登录账号密码，请点击 [获取账号密码](http://jeecg.com/doc/demo) 获取
-
-
-## 安装与使用
-
-*   本地环境安装 `Node.js 、npm 、pnpm`
-*   Node.js 版本要求`Node 20+` 版本以上
-
- ` ( 因为Vite5 不再支持已 EOL 的 Node.js 14 / 16 / 17 / 19，现在需要 Node 20+ )`
-
-
-  
-- Get the project code
+1. 打开 [jiangshang-dev/fondia-views](https://github.com/jiangshang-dev/fondia-views)。
+2. 点右上角 **Star**。
+3. Star 成功之后，再执行下面的命令。
 
 ```bash
-git clone https://github.com/jeecgboot/JeecgBoot.git
+git clone https://github.com/jiangshang-dev/fondia-views.git
+cd fondia-views
 ```
 
-- Installation dependencies
+Star 是这个项目继续维护文档和问题回复的前提。未 Star 就 Clone，视为没有接受本仓库的使用约定。
 
-```bash
-cd JeecgBoot/jeecgboot-vue3
+---
 
-pnpm install
+## 这是什么
+
+Fondia（饭典）管理后台用来录入菜谱、配置会员和积分、处理客服与评论。它基于 JeecgBoot Vue3，菜单和按钮权限跟着后端账号走。运营人员在这里改的内容，会出现在 [App](https://github.com/jiangshang-dev/fondia_app) 里。
+
+适合用来学习：
+
+- JeecgBoot Vue3 怎么接一套业务后台
+- 动态菜单、按钮权限和管理端接口的配合
+- 菜谱、会员、积分、客服页面如何按模块拆开
+
+接口和库表在后端仓库。本仓库只放管理端页面。
+
+## 相关仓库
+
+| 仓库 | 地址 | 内容 |
+|------|------|------|
+| 后端 | [jiangshang-dev/fondia](https://github.com/jiangshang-dev/fondia) | JeecgBoot 微服务、网关、库表 |
+| 管理后台 | [jiangshang-dev/fondia-views](https://github.com/jiangshang-dev/fondia-views) | 本仓库 |
+| App | [jiangshang-dev/fondia_app](https://github.com/jiangshang-dev/fondia_app) | Flutter 客户端：首页、分类、AI 厨伴、会员与我的 |
+
+## 功能
+
+页面在 `src/views/fondia`。系统用户、角色、菜单、字典沿用 JeecgBoot。
+
+| 模块 | 页面 | 说明 |
+|------|------|------|
+| 菜谱 | 分类、菜谱、标签、Banner | 内容录入与上下架 |
+| 互动 | 评论 | 评论查看与处理 |
+| 用户 | 反馈 | 用户反馈 |
+| 客服 | 配置、FAQ、快捷入口、工作台 | 在线客服 |
+| AI | 额度 | AI 每日配额 |
+| 会员 | 套餐、订阅、订单、支付 | 会员与支付单 |
+| 积分 | 签到配置、签到记录、任务、流水 | 签到与积分 |
+| 商城 | 商品、订单 | 积分商城 |
+
+菜单脚本在后端仓库 `db/init_fondia_admin_menu.sql`。导入后重新登录，侧边栏才会出现这些菜单。
+
+## 怎么连到后端
+
+```text
+管理后台 :3100
+    │  /jeecgboot 代理
+    ▼
+后端  http://localhost:8080/jeecg-boot
+或网关 http://localhost:9999
 ```
 
-- 配置接口地址 `.env.development`
+开发环境地址写在 `.env.development`：
 
 ```bash
 VITE_PROXY = [["/jeecgboot","http://localhost:8080/jeecg-boot"],["/upload","http://localhost:3300/upload"]]
 VITE_GLOB_DOMAIN_URL=http://localhost:8080/jeecg-boot
 ```
 
-> 说明：把`http://localhost:8080/jeecg-boot` 换成自己地址，其他不用改。
+把 `http://localhost:8080/jeecg-boot` 换成自己的后端地址。走微服务网关时，改成 `http://localhost:9999`。其余变量保持不动。
 
+## 技术栈
 
-- run
+| 层次 | 选型 |
+|------|------|
+| 框架 | Vue 3、Vite、TypeScript |
+| 组件 | Ant Design Vue 4、JeecgBoot Vue3 3.9.5 |
+| 状态与路由 | Pinia、Vue Router |
+| 包管理 | pnpm |
+| 运行环境 | Node.js 20+ |
+
+## 环境要求
+
+- Node.js 20 及以上（Vite 5 不再支持 Node 14 / 16 / 17 / 19）
+- pnpm
+- 已启动的 Fondia 后端，默认 `http://localhost:8080/jeecg-boot`
+
+后端的 JDK、MySQL、Redis、Nacos 见 [后端 README](https://github.com/jiangshang-dev/fondia#readme)。
+
+## 快速开始
+
+确认已经 Star 本仓库，并且后端可以访问。
+
+```bash
+git clone https://github.com/jiangshang-dev/fondia-views.git
+cd fondia-views
+pnpm install
+```
+
+改好 `.env.development` 里的接口地址后：
 
 ```bash
 pnpm dev
 ```
 
+浏览器打开 `http://localhost:3100`。使用后端初始化的管理员账号登录。
 
-- build
+生产构建：
 
 ```bash
 pnpm build
 ```
 
-## 入门必备
+本地开发建议用最新版 Chrome，不支持 Chrome 90 以下，也不支持 IE。
 
-本项目需要一定前端基础知识，请确保掌握 Vue 的基础知识，以便能处理一些常见的问题。 建议在开发前先学一下以下内容，提前了解和学习这些知识，会对项目理解非常有帮助:
+## 参与贡献
 
-*   [JeecgBoot文档](http://help.jeecg.com)
-*   [Vue3 文档](https://cn.vuejs.org/)
-*   [Vben文档](https://doc.vvbin.cn)
-*   [Ant-Design-Vue](https://www.antdv.com/docs/vue/introduce-cn/)
-*   [TypeScript](https://www.typescriptlang.org/)
-*   [Vue-router](https://router.vuejs.org/zh)
-*   [Es6](https://es6.ruanyifeng.com/)
-*   [Vitejs](https://cn.vitejs.dev/guide/)
-*   [Pinia(vuex替代方案)](https://pinia.esm.dev/introduction.html)
-*   [Vue-RFCS](https://github.com/vuejs/rfcs)
-*   [vxetable文档](https://vxetable.cn)
+1. 先 Star 本仓库。接口和库表改动请到 [fondia](https://github.com/jiangshang-dev/fondia) 提，客户端改动请到 [fondia_app](https://github.com/jiangshang-dev/fondia_app) 提。
+2. Fork 之后从默认分支拉分支，分支名带上改动意图。
+3. 提交前说明影响的菜单和页面，不要提交本机地址和密钥。
+4. Pull Request 写清动机、验证方式和不兼容变更。
 
+问题请到 [Issues](https://github.com/jiangshang-dev/fondia-views/issues) 提交，附上页面路径、接口和复现步骤。
 
-##   浏览器支持
+## 开源协议
 
-**本地开发**推荐使用`Chrome 最新版`浏览器，**不支持**`Chrome 90`以下版本。
+本仓库基于 [JeecgBoot Vue3](https://github.com/jeecgboot/JeecgBoot)，以 [Apache License 2.0](LICENSE) 发布。使用、修改和再分发时保留版权与许可声明。服务端协议见后端仓库 [Apache License 2.0](https://github.com/jiangshang-dev/fondia/blob/fondia/LICENSE)。
 
-**生产环境**支持现代浏览器，不支持 IE。
+## 致谢
 
-| [![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png)](http://godban.github.io/browsers-support-badges/)IE | [![ Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/)Edge | [![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/)Firefox | [![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/)Chrome | [![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/)Safari |
-| --- | --- | --- | --- | --- |
-| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+- [Fondia 后端](https://github.com/jiangshang-dev/fondia)
+- [Fondia App](https://github.com/jiangshang-dev/fondia_app)
+- [JeecgBoot](https://github.com/jeecgboot/JeecgBoot)
+- Vue、Vite、Ant Design Vue
+
+---
+
+如果这份管理后台帮到了你，回到仓库点一次 **Star**。还没 Star，就先不要 Clone。
